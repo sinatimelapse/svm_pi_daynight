@@ -45,7 +45,8 @@ with open('svm_model.pkl' , 'rb') as f :
 
 for i in images :
    
-   path = './testes/%s'%i
+   path = "./testes/%s"%i 
+    
    img = extract_feature(path) 
    
    img = img.reshape(1, -1)
@@ -53,7 +54,13 @@ for i in images :
 
    label=model.predict(img)
 
+<<<<<<< HEAD
+   print i," ",label 
+ 
+
+=======
    print "i,'',label" 
    
+>>>>>>> 8c9aeaee5f03148fd9fffc298db8fee766e8b04d
    
 
