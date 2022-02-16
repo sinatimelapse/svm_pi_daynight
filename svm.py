@@ -58,7 +58,7 @@ if __name__ == "__main__":
       print "Fitting"
 
       # Fitting model
-      svm = SVC()
+      svm = SVC(gamma="scale")
       svm.fit(X_train, y_train)
 
       print "Saving model..."
