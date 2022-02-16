@@ -54,7 +54,6 @@ for i in images :
    label=model.predict(img)
 
    print "i,'',label" 
-   if (label =="day") :
-      print "yes it is the daylight !"
+   
    
 
