@@ -45,7 +45,8 @@ with open('svm_model.pkl' , 'rb') as f :
 
 for i in images :
    
-   path = './testes/%s'%i
+   path = "./testes/%s"%i 
+    
    img = extract_feature(path) 
    
    img = img.reshape(1, -1)
@@ -53,8 +54,8 @@ for i in images :
 
    label=model.predict(img)
 
-   print "i,'',label" 
-   if (label =="day") :
-      print "yes it is the daylight !"
+   print i," ",label 
+ 
+
    
 
