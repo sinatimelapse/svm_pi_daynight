@@ -54,8 +54,13 @@ for i in images :
 
    label=model.predict(img)
 
+<<<<<<< HEAD
    print i," ",label 
  
 
+=======
+   print "i,'',label" 
+   
+>>>>>>> 8c9aeaee5f03148fd9fffc298db8fee766e8b04d
    
 
